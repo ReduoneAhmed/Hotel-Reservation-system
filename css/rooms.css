@@ -1,0 +1,203 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b1aeae;
+
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.logout-button {
+    position: absolute;
+    top: 40px;
+    right: 185px;
+    color: white;
+    padding: 10px 10px;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+    /* Added fade-in animation */
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #603607;
+    text-align: center;
+    padding: 10px 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    transition: all 0.3s ease;
+}
+
+nav .nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #4CAF50;
+    transform: translateY(-3px);
+}
+
+nav .nav-links .active {
+    color: #4CAF50;
+}
+
+/* Header Styling */
+header h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Room Options Grid (3 rooms per row) */
+.room-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+    .room-options {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .room-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .room-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+.room-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.room-card:hover {
+    transform: scale(1.05);
+}
+
+.room-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.room-details {
+    padding: 15px;
+}
+
+.room-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.room-price {
+    font-size: 16px;
+    color: #27ae60;
+    margin-bottom: 15px;
+}
+
+.select-room {
+    padding: 8px 16px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.select-room:hover {
+    background-color: #3498db;
+    transform: translateY(-3px);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Page Opening Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
